@@ -1,0 +1,9 @@
+{
+	"name": "Lynk-Merlin",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b9efa935-2f2c-4da3-bab6-22585511ff59",
+		"tenantId": "8de39458-080f-4262-b920-5b742030ac74"
+	}
+}
