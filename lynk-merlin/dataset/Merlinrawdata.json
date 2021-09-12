@@ -1,0 +1,192 @@
+{
+	"name": "Merlinrawdata",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Merlinrawdatainputblob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "FInal Master merlin.csv",
+				"container": "lynk"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "City",
+				"type": "String"
+			},
+			{
+				"name": "Type",
+				"type": "String"
+			},
+			{
+				"name": "Brand",
+				"type": "String"
+			},
+			{
+				"name": "Warehouse",
+				"type": "String"
+			},
+			{
+				"name": "Com Customer Code",
+				"type": "String"
+			},
+			{
+				"name": "Distr Customer Code",
+				"type": "String"
+			},
+			{
+				"name": "Separator",
+				"type": "String"
+			},
+			{
+				"name": "Altered Code",
+				"type": "String"
+			},
+			{
+				"name": "CustomerName",
+				"type": "String"
+			},
+			{
+				"name": "Phone",
+				"type": "String"
+			},
+			{
+				"name": "Address",
+				"type": "String"
+			},
+			{
+				"name": "RouteName",
+				"type": "String"
+			},
+			{
+				"name": "DES Name",
+				"type": "String"
+			},
+			{
+				"name": "Latitude",
+				"type": "String"
+			},
+			{
+				"name": "Longitude",
+				"type": "String"
+			},
+			{
+				"name": "Loc Data?",
+				"type": "String"
+			},
+			{
+				"name": "GST IN",
+				"type": "String"
+			},
+			{
+				"name": "Address Len",
+				"type": "String"
+			},
+			{
+				"name": "Batch",
+				"type": "String"
+			},
+			{
+				"name": "GST Address",
+				"type": "String"
+			},
+			{
+				"name": "Merlin Ret ID",
+				"type": "String"
+			},
+			{
+				"name": "Merlin Cluster ID",
+				"type": "String"
+			},
+			{
+				"name": "Merlin Lat22",
+				"type": "String"
+			},
+			{
+				"name": "Merlin Lat23",
+				"type": "String"
+			},
+			{
+				"name": "Google Lat,Long",
+				"type": "String"
+			},
+			{
+				"name": "Google Lat",
+				"type": "String"
+			},
+			{
+				"name": "Google Long",
+				"type": "String"
+			},
+			{
+				"name": "Google Result",
+				"type": "String"
+			},
+			{
+				"name": "Image Lat",
+				"type": "String"
+			},
+			{
+				"name": "Image Long",
+				"type": "String"
+			},
+			{
+				"name": "Combing Lat",
+				"type": "String"
+			},
+			{
+				"name": "Combing Long",
+				"type": "String"
+			},
+			{
+				"name": "Image Lat Final",
+				"type": "String"
+			},
+			{
+				"name": "Image Long Final",
+				"type": "String"
+			},
+			{
+				"name": "Status",
+				"type": "String"
+			},
+			{
+				"name": "DSR Name",
+				"type": "String"
+			},
+			{
+				"name": "DSR Number",
+				"type": "String"
+			},
+			{
+				"name": "Beat Name",
+				"type": "String"
+			},
+			{
+				"name": "Day of the Beat",
+				"type": "String"
+			},
+			{
+				"name": "Lat",
+				"type": "String"
+			},
+			{
+				"name": "Long",
+				"type": "String"
+			},
+			{
+				"name": "Phone Number",
+				"type": "String"
+			}
+		]
+	}
+}

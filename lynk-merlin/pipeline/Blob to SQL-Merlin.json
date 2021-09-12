@@ -1,6 +1,598 @@
 {
 	"name": "Blob to SQL-Merlin",
 	"properties": {
+		"activities": [
+			{
+				"name": "Merlinrawdata csv to SQL",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
+						}
+					},
+					"sink": {
+						"type": "AzureSqlSink"
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "City",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "City",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Type",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Type",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Brand",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Brand",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Warehouse",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Warehouse",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Com Customer Code",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Com_Customer_Code",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Distr Customer Code",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Distr_Customer_Code",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Separator",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Separator",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Altered Code",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Altered_Code",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "CustomerName",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CustomerName",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Phone",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Phone",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 3,
+									"precision": 18
+								}
+							},
+							{
+								"source": {
+									"name": "Address",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Address",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "RouteName",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "RouteName",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "DES Name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "DES_Name",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Latitude",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Latitude",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 3,
+									"precision": 18
+								}
+							},
+							{
+								"source": {
+									"name": "Longitude",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Longitude",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 3,
+									"precision": 18
+								}
+							},
+							{
+								"source": {
+									"name": "Loc Data?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Loc_Data",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "GST IN",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "GST_IN",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Address Len",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Address_Len",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Batch",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Batch",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "GST Address",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "GST_Address",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Merlin Ret ID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Merlin_Ret_ID",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Merlin Cluster ID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Merlin_Cluster_ID",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Merlin Lat22",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Merlin_Lat",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 3,
+									"precision": 18
+								}
+							},
+							{
+								"source": {
+									"name": "Merlin Lat23",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Merlin_Long",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 3,
+									"precision": 18
+								}
+							},
+							{
+								"source": {
+									"name": "Google Lat,Long",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Google_Lat_Long",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 3,
+									"precision": 18
+								}
+							},
+							{
+								"source": {
+									"name": "Google Lat",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Google_Lat",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 3,
+									"precision": 18
+								}
+							},
+							{
+								"source": {
+									"name": "Google Long",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Google_Long",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 3,
+									"precision": 18
+								}
+							},
+							{
+								"source": {
+									"name": "Google Result",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Google_Result",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Image Lat",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Image_Lat",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 3,
+									"precision": 18
+								}
+							},
+							{
+								"source": {
+									"name": "Image Long",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Image_Long",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 3,
+									"precision": 18
+								}
+							},
+							{
+								"source": {
+									"name": "Combing Lat",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Combing_Lat",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 3,
+									"precision": 18
+								}
+							},
+							{
+								"source": {
+									"name": "Combing Long",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Combing_Long",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 3,
+									"precision": 18
+								}
+							},
+							{
+								"source": {
+									"name": "Image Lat Final",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Image_Lat_Final",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 3,
+									"precision": 18
+								}
+							},
+							{
+								"source": {
+									"name": "Image Long Final",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Image_Long_Final",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 3,
+									"precision": 18
+								}
+							},
+							{
+								"source": {
+									"name": "Status",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Status",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "DSR Name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "DSR_Name",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "DSR Number",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "DSR_Number",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Beat Name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Beat_Name",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Day of the Beat",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Day_of_the_Beat",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Lat",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Lat",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 3,
+									"precision": 18
+								}
+							},
+							{
+								"source": {
+									"name": "Long",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Long",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 3,
+									"precision": 18
+								}
+							},
+							{
+								"source": {
+									"name": "Phone Number",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Phone_Number",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 3,
+									"precision": 18
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "Merlinrawdata",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "Merlinrawdatasame",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
 		"annotations": []
 	}
 }
