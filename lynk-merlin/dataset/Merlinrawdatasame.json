@@ -1,0 +1,219 @@
+{
+	"name": "Merlinrawdatasame",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Merlinrawdata",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "City",
+				"type": "varchar"
+			},
+			{
+				"name": "Type",
+				"type": "varchar"
+			},
+			{
+				"name": "Brand",
+				"type": "varchar"
+			},
+			{
+				"name": "Warehouse",
+				"type": "varchar"
+			},
+			{
+				"name": "Com_Customer_Code",
+				"type": "varchar"
+			},
+			{
+				"name": "Distr_Customer_Code",
+				"type": "varchar"
+			},
+			{
+				"name": "Separator",
+				"type": "varchar"
+			},
+			{
+				"name": "Altered_Code",
+				"type": "varchar"
+			},
+			{
+				"name": "CustomerName",
+				"type": "varchar"
+			},
+			{
+				"name": "Phone",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "Address",
+				"type": "varchar"
+			},
+			{
+				"name": "RouteName",
+				"type": "varchar"
+			},
+			{
+				"name": "DES_Name",
+				"type": "varchar"
+			},
+			{
+				"name": "Latitude",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "Longitude",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "Loc_Data",
+				"type": "varchar"
+			},
+			{
+				"name": "GST_IN",
+				"type": "varchar"
+			},
+			{
+				"name": "Address_Len",
+				"type": "varchar"
+			},
+			{
+				"name": "Batch",
+				"type": "varchar"
+			},
+			{
+				"name": "GST_Address",
+				"type": "varchar"
+			},
+			{
+				"name": "Merlin_Ret_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "Merlin_Cluster_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "Merlin_Lat",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "Merlin_Long",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "Google_Lat_Long",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "Google_Lat",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "Google_Long",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "Google_Result",
+				"type": "varchar"
+			},
+			{
+				"name": "Image_Lat",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "Image_Long",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "Combing_Lat",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "Combing_Long",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "Image_Lat_Final",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "Image_Long_Final",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "Status",
+				"type": "varchar"
+			},
+			{
+				"name": "DSR_Name",
+				"type": "varchar"
+			},
+			{
+				"name": "DSR_Number",
+				"type": "varchar"
+			},
+			{
+				"name": "Beat_Name",
+				"type": "varchar"
+			},
+			{
+				"name": "Day_of_the_Beat",
+				"type": "varchar"
+			},
+			{
+				"name": "Lat",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "Long",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "Phone_Number",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Merlin_Master"
+		}
+	}
+}
