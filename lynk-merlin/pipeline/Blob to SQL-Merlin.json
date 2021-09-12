@@ -593,12 +593,6 @@
 				]
 			}
 		],
-		"parameters": {
-			"Merlinrawdata": {
-				"type": "string",
-				"defaultValue": "windows-latest"
-			}
-		},
 		"annotations": []
 	}
 }
