@@ -35,8 +35,9 @@
 						"mappings": [
 							{
 								"source": {
+									"name": "City",
 									"type": "String",
-									"ordinal": 1
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "City",
@@ -46,8 +47,9 @@
 							},
 							{
 								"source": {
+									"name": "Type",
 									"type": "String",
-									"ordinal": 2
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Type",
@@ -57,8 +59,9 @@
 							},
 							{
 								"source": {
+									"name": "Brand",
 									"type": "String",
-									"ordinal": 3
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Brand",
@@ -68,8 +71,9 @@
 							},
 							{
 								"source": {
+									"name": "Warehouse",
 									"type": "String",
-									"ordinal": 4
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Warehouse",
@@ -79,8 +83,9 @@
 							},
 							{
 								"source": {
+									"name": "Com_Customer_Code",
 									"type": "String",
-									"ordinal": 5
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Com_Customer_Code",
@@ -90,8 +95,9 @@
 							},
 							{
 								"source": {
+									"name": "Distr_Customer_Code",
 									"type": "String",
-									"ordinal": 6
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Distr_Customer_Code",
@@ -101,8 +107,9 @@
 							},
 							{
 								"source": {
+									"name": "Separator",
 									"type": "String",
-									"ordinal": 7
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Separator",
@@ -112,8 +119,9 @@
 							},
 							{
 								"source": {
+									"name": "Altered_Code",
 									"type": "String",
-									"ordinal": 8
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Altered_Code",
@@ -123,8 +131,9 @@
 							},
 							{
 								"source": {
+									"name": "CustomerName",
 									"type": "String",
-									"ordinal": 9
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "CustomerName",
@@ -134,8 +143,9 @@
 							},
 							{
 								"source": {
+									"name": "Phone",
 									"type": "String",
-									"ordinal": 10
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Phone",
@@ -147,8 +157,9 @@
 							},
 							{
 								"source": {
+									"name": "Address",
 									"type": "String",
-									"ordinal": 11
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Address",
@@ -158,8 +169,9 @@
 							},
 							{
 								"source": {
+									"name": "RouteName",
 									"type": "String",
-									"ordinal": 12
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "RouteName",
@@ -169,8 +181,9 @@
 							},
 							{
 								"source": {
+									"name": "DES_Name",
 									"type": "String",
-									"ordinal": 13
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "DES_Name",
@@ -180,8 +193,9 @@
 							},
 							{
 								"source": {
+									"name": "Latitude",
 									"type": "String",
-									"ordinal": 14
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Latitude",
@@ -193,8 +207,9 @@
 							},
 							{
 								"source": {
+									"name": "Longitude",
 									"type": "String",
-									"ordinal": 15
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Longitude",
@@ -206,8 +221,9 @@
 							},
 							{
 								"source": {
+									"name": "Loc_Data",
 									"type": "String",
-									"ordinal": 16
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Loc_Data",
@@ -217,8 +233,9 @@
 							},
 							{
 								"source": {
+									"name": "GST_IN",
 									"type": "String",
-									"ordinal": 17
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "GST_IN",
@@ -228,8 +245,9 @@
 							},
 							{
 								"source": {
+									"name": "Address_Len",
 									"type": "String",
-									"ordinal": 18
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Address_Len",
@@ -239,8 +257,9 @@
 							},
 							{
 								"source": {
+									"name": "Batch",
 									"type": "String",
-									"ordinal": 19
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Batch",
@@ -250,8 +269,9 @@
 							},
 							{
 								"source": {
+									"name": "GST_Address",
 									"type": "String",
-									"ordinal": 20
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "GST_Address",
@@ -261,8 +281,9 @@
 							},
 							{
 								"source": {
+									"name": "Merlin_Ret_ID",
 									"type": "String",
-									"ordinal": 21
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Merlin_Ret_ID",
@@ -272,8 +293,9 @@
 							},
 							{
 								"source": {
+									"name": "Merlin_Cluster_ID",
 									"type": "String",
-									"ordinal": 22
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Merlin_Cluster_ID",
@@ -283,8 +305,9 @@
 							},
 							{
 								"source": {
+									"name": "Merlin_Lat",
 									"type": "String",
-									"ordinal": 23
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Merlin_Lat",
@@ -296,8 +319,9 @@
 							},
 							{
 								"source": {
+									"name": "Merlin_Long",
 									"type": "String",
-									"ordinal": 24
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Merlin_Long",
@@ -309,8 +333,9 @@
 							},
 							{
 								"source": {
+									"name": "Google_Lat_Long",
 									"type": "String",
-									"ordinal": 25
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Google_Lat_Long",
@@ -320,8 +345,9 @@
 							},
 							{
 								"source": {
+									"name": "Google_Lat",
 									"type": "String",
-									"ordinal": 26
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Google_Lat",
@@ -333,8 +359,9 @@
 							},
 							{
 								"source": {
+									"name": "Google_Long",
 									"type": "String",
-									"ordinal": 27
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Google_Long",
@@ -346,8 +373,9 @@
 							},
 							{
 								"source": {
+									"name": "Google_Result",
 									"type": "String",
-									"ordinal": 28
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Google_Result",
@@ -357,8 +385,9 @@
 							},
 							{
 								"source": {
+									"name": "Image_Lat",
 									"type": "String",
-									"ordinal": 29
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Image_Lat",
@@ -370,8 +399,9 @@
 							},
 							{
 								"source": {
+									"name": "Image_Long",
 									"type": "String",
-									"ordinal": 30
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Image_Long",
@@ -383,8 +413,9 @@
 							},
 							{
 								"source": {
+									"name": "Combing_Lat",
 									"type": "String",
-									"ordinal": 31
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Combing_Lat",
@@ -396,8 +427,9 @@
 							},
 							{
 								"source": {
+									"name": "Combing_Long",
 									"type": "String",
-									"ordinal": 32
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Combing_Long",
@@ -409,8 +441,9 @@
 							},
 							{
 								"source": {
+									"name": "Image_Lat_Final",
 									"type": "String",
-									"ordinal": 33
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Image_Lat_Final",
@@ -422,8 +455,9 @@
 							},
 							{
 								"source": {
+									"name": "Image_Long_Final",
 									"type": "String",
-									"ordinal": 34
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Image_Long_Final",
@@ -435,8 +469,9 @@
 							},
 							{
 								"source": {
+									"name": "Status",
 									"type": "String",
-									"ordinal": 35
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Status",
@@ -446,8 +481,9 @@
 							},
 							{
 								"source": {
+									"name": "DSR_Name",
 									"type": "String",
-									"ordinal": 36
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "DSR_Name",
@@ -457,8 +493,9 @@
 							},
 							{
 								"source": {
+									"name": "DSR_Number",
 									"type": "String",
-									"ordinal": 37
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "DSR_Number",
@@ -468,8 +505,9 @@
 							},
 							{
 								"source": {
+									"name": "Beat_Name",
 									"type": "String",
-									"ordinal": 38
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Beat_Name",
@@ -479,8 +517,9 @@
 							},
 							{
 								"source": {
+									"name": "Day_of_the_Beat",
 									"type": "String",
-									"ordinal": 39
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Day_of_the_Beat",
@@ -490,8 +529,9 @@
 							},
 							{
 								"source": {
+									"name": "Lat",
 									"type": "String",
-									"ordinal": 40
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Lat",
@@ -503,8 +543,9 @@
 							},
 							{
 								"source": {
+									"name": "Long",
 									"type": "String",
-									"ordinal": 41
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Long",
@@ -516,8 +557,9 @@
 							},
 							{
 								"source": {
+									"name": "Phone_Number",
 									"type": "String",
-									"ordinal": 42
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Phone_Number",
