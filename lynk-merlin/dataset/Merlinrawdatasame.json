@@ -116,9 +116,7 @@
 			},
 			{
 				"name": "Google_Lat_Long",
-				"type": "decimal",
-				"precision": 18,
-				"scale": 3
+				"type": "varchar"
 			},
 			{
 				"name": "Google_Lat",
